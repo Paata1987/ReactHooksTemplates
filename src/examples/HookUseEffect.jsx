@@ -3,19 +3,19 @@ import { useState, useEffect } from 'react';
 
 const HookUseEffect = () => {
   const [type, setType] = useState();
-  const [data, setData] = useState();
+  //const [ data,  setData] = useState();
   const [pos, setPos] = useState({
     x: 0,
     y: 0,
   });
 
   //api
-  const api_url = `https://jsonplaceholder.typicode.com/${type}`;
 
   useEffect(() => {
-    fetch(api_url)
+    fetch(`https://jsonplaceholder.typicode.com/${type}`)
       .then((res) => res.json())
-      .then((json) => setData(json));
+      .then(console.log('render'));
+    //.then((json) => setData(json));
   }, [type]);
 
   //mouse movement coordinates
@@ -52,7 +52,7 @@ const HookUseEffect = () => {
       <button onClick={users}>Users</button>
       <button onClick={todos}>Todos</button>
       <button onClick={posts}>Posts</button>
-      {/*       <pre>{JSON.stringify(data, null, 2)} </pre> */}
+      {/* <pre>{JSON.stringify(data, null, 2)} </pre> */}
       <pre>{JSON.stringify(pos, null, 2)} </pre>
     </div>
   );
