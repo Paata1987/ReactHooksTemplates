@@ -1,5 +1,6 @@
 import Context from './examples/alert/Context';
 import HookUseEffect from './examples/HookUseEffect';
+import OwnHook from './examples/OwnHook';
 import State from './examples/State';
 import UseCallBack from './examples/UseCallBack';
 import UseMemo from './examples/UseMemo';
@@ -13,6 +14,7 @@ function App() {
       ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
       ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
       ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      <OwnHook />
       ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
       <Context />
       ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
