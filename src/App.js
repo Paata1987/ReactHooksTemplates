@@ -1,5 +1,6 @@
 import HookUseEffect from './examples/HookUseEffect';
 import State from './examples/State';
+import UseCallBack from './examples/UseCallBack';
 import UseMemo from './examples/UseMemo';
 import UseRef from './examples/UseRef';
 
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App">
       ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      <UseCallBack />
       ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
       <UseMemo />
       ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
