@@ -12,9 +12,10 @@ const HookUseEffect = () => {
   //api
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/${type}`)
-      .then((res) => res.json())
-      .then(console.log('render'));
+    fetch(`https://jsonplaceholder.typicode.com/${type}`).then((res) =>
+      res.json()
+    );
+    //.then(console.log('Hook'));
     //.then((json) => setData(json));
   }, [type]);
 

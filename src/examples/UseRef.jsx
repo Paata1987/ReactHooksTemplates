@@ -23,7 +23,7 @@ const UseRef = () => {
   //same  counter we can whrite using useREf
   useEffect(() => {
     renderCount.current++;
-    console.log(inputRef.current.value);
+    //console.log(inputRef.current.value);
     //renderCount++;
   });
 
@@ -48,7 +48,10 @@ const UseRef = () => {
         }}
         value={value}
       />
-      <button className="btn btn-success" onClick={focus}>
+      <button
+        className="btn btn-success"
+        onClick={focus}
+      >
         {' '}
         focus{' '}
       </button>
