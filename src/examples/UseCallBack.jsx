@@ -4,7 +4,7 @@ import UseCallBackItemList from './UseCallBackItemList';
 import { useCallback } from 'react';
 
 export const UseCallBack = () => {
-  const [count, setCount] = useState(2);
+  const [count, setCount] = useState(1);
   const [colored, setColored] = useState(false);
 
   const styles = { color: colored ? 'darkred' : 'black' };
